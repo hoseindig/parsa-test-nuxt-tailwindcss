@@ -183,34 +183,14 @@
     </div>
 
     <!-- Bottom Action Buttons (like in the image) -->
-    <div class="bg-darkgray px-4 py-2 flex justify-center space-x-4">
-      <button
-        class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded text-sm transition-colors duration-200"
-      >
-        {{ reportButtonText }}
-      </button>
-      <button
-        class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm transition-colors duration-200"
-      >
-        {{ oldVersionsButtonText }}
-      </button>
-      <button
-        class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm transition-colors duration-200"
-      >
-        {{ newVersionsButtonText }}
-      </button>
-      <button
-        class="bg-red-700 hover:bg-red-800 text-white px-4 py-2 rounded text-sm transition-colors duration-200"
-      >
-        {{ psychologyButtonText }}
-      </button>
-    </div>
+    <VideoPlayerActionButton />
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import VideoTitle from "~/components/VideoTitle";
+import VideoPlayerActionButton from "~/components/VideoPlayerActionButton";
 
 // Props with default values
 const props = defineProps({
