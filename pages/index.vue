@@ -1,11 +1,12 @@
 <!-- pages/index.vue -->
 <template>
   <div class="min-h-screen bg-darkgray text-white" dir="rtl">
-    <div class="pt-16">up bar</div>
+    <div class=""><UpBar /></div>
     <div class="pt-16">back bar</div>
 
+    <!-- container -->
     <div class="container mx-auto py-0 lg:flex lg:space-x-4">
-      <div class="lg:w-3/4">
+      <div class="lg:w-4/6">
         <div class="flex items-center rounded-lg p-2 w-full" v-if="!loading">
           <!-- Small Box with 1 -->
           <div class="px-4 py-2 rounded-lg text-xl font-bold">
@@ -56,7 +57,7 @@
         </div>
       </div>
       <!-- 1/4  -->
-      <div class="lg:w-1/4 mt-4 lg:mt-0 flex items-center justify-center">
+      <div class="lg:w-2/6 mt-4 lg:mt-0 flex items-center justify-center px-6">
         <MediaToolbar />
       </div>
     </div>
@@ -70,10 +71,12 @@
         Retry
       </button>
     </div>
+
+    <!-- container -->
     <div v-else class="container mx-auto p-4 lg:flex lg:space-x-4">
       <!-- Main Content -->
 
-      <div class="lg:w-3/4">
+      <div class="lg:w-4/6">
         <div v-if="loading" class="animate-pulse">
           <!-- Skeleton for Movie Information -->
           <div class="h-8 bg-gray-300 rounded w-3/4 mb-4"></div>
@@ -113,7 +116,7 @@
         </div>
       </div>
       <!-- Sidebar -->
-      <div class="lg:w-1/4 mt-4 lg:mt-0">
+      <div class="lg:w-2/6 mt-4 lg:mt-0 px-6">
         <div v-if="loading" class="animate-pulse space-y-4">
           <!-- Skeleton for Episode List -->
           <div v-for="i in 3" :key="i" class="flex items-center space-x-2">
@@ -132,7 +135,7 @@ import { ref, onMounted } from "vue";
 import RatingDisplay from "~/components/RatingDisplay.vue";
 import VideoPlayer from "~/components/VideoPlayer.vue";
 import EpisodeList from "~/components/EpisodeList.vue";
-import UpBar from "~/components/UpBar";
+import UpBar from "~/components/TopBar";
 import WebDLBadge from "~/components/WebDLBadge";
 import MediaToolbar from "~/components/MediaToolbar";
 
