@@ -1,6 +1,5 @@
 <template>
   <div class="w-full px-3 bg-darkgray rounded-lg overflow-hidden">
-    <!-- <VideoTitle /> -->
     <!-- Video Container -->
     <div class="relative group">
       <!-- Video Element -->
@@ -189,7 +188,6 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
-import VideoTitle from "~/components/VideoTitle";
 import VideoPlayerActionButton from "~/components/VideoPlayerActionButton";
 
 // Props with default values
