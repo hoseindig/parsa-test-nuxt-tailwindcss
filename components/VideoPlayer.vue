@@ -155,7 +155,7 @@
         <!-- Right Controls -->
         <div class="flex items-center space-x-4">
           <!-- Quality Selector -->
-          <select
+          <!-- <select
             v-model="selectedQuality"
             class="bg-gray-800 text-white text-sm rounded px-2 py-1 border-none outline-none hover:bg-gray-700 transition-colors duration-200"
             @change="changeQuality"
@@ -164,7 +164,7 @@
             <option value="720p">720p</option>
             <option value="480p">480p</option>
             <option value="360p">360p</option>
-          </select>
+          </select> -->
 
           <!-- Fullscreen -->
           <button
