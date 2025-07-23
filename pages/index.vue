@@ -2,7 +2,7 @@
 <template>
   <div class="min-h-screen bg-darkgray text-white" dir="rtl">
     <div class=""><UpBar /></div>
-    <div class="pt-16">back bar</div>
+    <div class=""><BackBar /></div>
 
     <!-- container -->
     <div class="container mx-auto py-0 lg:flex lg:space-x-4">
@@ -136,6 +136,7 @@ import RatingDisplay from "~/components/RatingDisplay.vue";
 import VideoPlayer from "~/components/VideoPlayer.vue";
 import EpisodeList from "~/components/EpisodeList.vue";
 import UpBar from "~/components/TopBar";
+import BackBar from "~/components/BackBar";
 import WebDLBadge from "~/components/WebDLBadge";
 import MediaToolbar from "~/components/MediaToolbar";
 
